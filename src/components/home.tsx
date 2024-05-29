@@ -26,6 +26,7 @@ import {
   Select,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Home() {
   return (
@@ -58,12 +59,13 @@ export function Home() {
                     <SelectValue placeholder="Select size" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="small">Just a yoga mat</SelectItem>
-                    <SelectItem value="medium">I have a rack</SelectItem>
-                    <SelectItem value="large">I'm in a park</SelectItem>
-                    <SelectItem value="large">
+                    <SelectItem value="yoga">Just a yoga mat</SelectItem>
+                    <SelectItem value="rack">I have a rack</SelectItem>
+                    <SelectItem value="park">I'm in a park</SelectItem>
+                    <SelectItem value="garage">
                       I'm in my garage and can go out to run
                     </SelectItem>
+                    <SelectItem value="gym">I'm in a crossfit gym</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -99,16 +101,16 @@ export function Home() {
                   <SelectContent>
                     <SelectItem value="kettlebell">Kettlebell</SelectItem>
                     <SelectItem value="dumbbells">Dumbbells</SelectItem>
-                    <SelectItem value="resistance-bands">
-                      Barbell and plates
-                    </SelectItem>
-                    <SelectItem value="resistance-bands">None</SelectItem>
+                    <SelectItem value="barbell">Barbell and plates</SelectItem>
+                    <SelectItem value="none">None</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
             </div>
           </div>
-          <Button className="w-full">Start workout!</Button>
+          <Link href="/workout" passHref legacyBehavior>
+            <Button className="w-full">Start workout!</Button>
+          </Link>
         </div>
       </div>
     </div>
