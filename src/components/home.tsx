@@ -55,7 +55,7 @@ export function Home() {
                 <Label className="text-sm text-gray-300" htmlFor="room-size">
                   Room/Gym size
                 </Label>
-                <Select defaultValue="medium" id="room-size">
+                <Select defaultValue="medium">
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select size" />
                   </SelectTrigger>
@@ -77,7 +77,7 @@ export function Home() {
                 >
                   How much time you have?
                 </Label>
-                <Select defaultValue="30" id="time-available">
+                <Select defaultValue="30">
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select time" />
                   </SelectTrigger>
@@ -95,7 +95,7 @@ export function Home() {
                 <Label className="text-sm text-gray-300" htmlFor="equipment">
                   What equipment you have?
                 </Label>
-                <Select defaultValue="kettlebell" id="equipment">
+                <Select defaultValue="kettlebell">
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select equipment" />
                   </SelectTrigger>
