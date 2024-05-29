@@ -55,7 +55,7 @@ export function Home() {
                 <Label className="text-sm text-gray-300" htmlFor="room-size">
                   Room/Gym size
                 </Label>
-                <Select defaultValue="medium">
+                <Select defaultValue="yoga">
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select size" />
                   </SelectTrigger>
